@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Trader Sam</title>
+    
+    <!-- Preload your logo (biggest visual element) -->
+    <link rel="preload" href="GOLD TRADER SAM LOGO.png" as="image">
+    
+    <!-- Meta Pixel – keep async + noscript fallback -->
+    <script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '897580452655562');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=897580452655562&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <style>
+        :root {
+            --bg: #1e2428;
+            --text: #fff;
+            --card: #ffffff;
+            --card-text: #000;
+            --accent: #2f3336;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            min-height: 100dvh;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 90%;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 1.5rem auto;
+            border: 2px solid #2f3336;
+            background: #000;
+        }
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link {
+            background: var(--card);
+            color: var(--card-text);
+            padding: 1rem 1.25rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: transform 0.12s ease;
+        }
+        .link:hover { transform: scale(1.03); }
+        .link svg { width: 24px; height: 24px; flex-shrink: 0; }
+        .join-btn {
+            margin: 2.5rem auto 0;
+            background: var(--accent);
+            color: var(--text);
+            padding: 0.8rem 1.8rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="GOLD TRADER SAM LOGO.png" alt="Gold Trader Sam">
+            </div>
+            <h1>Gold Trader Sam</h1>
+        </div>
+
+        <div class="links">
+            <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
+               class="link" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>
+                </svg>
+                Join my Telegram channel – Daily FREE signals & education
+            </a>
+
+            <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
+               class="link" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 14a3.5 3.5 0 0 0 5 0l4-4a3.5 3.5 0 0 0-5-5l-.5.5"/>
+                    <path d="M14 10a3.5 3.5 0 0 0-5 0l-4 4a3.5 3.5 0 0 0 5 5l.5-.5"/>
+                    <path d="M16 21v-2M19 16h2M3 8h2M8 3v2"/>
+                </svg>
+                My Telegram Channel
+            </a>
+        </div>
+
+        <!-- Optional extra call-to-action button -->
+        <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
+           class="join-btn" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>
+            </svg>
+            Join Now – Get Signals Daily
+        </a>
+    </div>
+</body>
+</html>
