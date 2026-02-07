@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold Trader Sam</title>
     
-    <!-- Preload your logo (biggest visual element) -->
+    <!-- Preload logo for instant visual -->
     <link rel="preload" href="GOLD TRADER SAM LOGO.png" as="image">
     
-    <!-- Meta Pixel – keep async + noscript fallback -->
+    <!-- Meta Pixel (kept async) -->
     <script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,12 +32,11 @@
             --text: #fff;
             --card: #ffffff;
             --card-text: #000;
-            --accent: #2f3336;
         }
         * { margin:0; padding:0; box-sizing:border-box; }
         body {
             min-height: 100dvh;
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: system-ui, sans-serif;
             background: var(--bg);
             color: var(--text);
             display: grid;
@@ -59,9 +58,7 @@
             background: #000;
         }
         .profile-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 100%; height: 100%; object-fit: cover;
         }
         h1 {
             font-size: 1.6rem;
@@ -83,22 +80,10 @@
             align-items: center;
             justify-content: center;
             gap: 0.75rem;
-            transition: transform 0.12s ease;
+            transition: transform 0.1s ease; /* faster feel */
         }
         .link:hover { transform: scale(1.03); }
         .link svg { width: 24px; height: 24px; flex-shrink: 0; }
-        .join-btn {
-            margin: 2.5rem auto 0;
-            background: var(--accent);
-            color: var(--text);
-            padding: 0.8rem 1.8rem;
-            border-radius: 999px;
-            text-decoration: none;
-            font-size: 0.95rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
     </style>
 </head>
 <body>
@@ -111,7 +96,7 @@
         </div>
 
         <div class="links">
-            <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
+            <a href="https://t.me/+noyfo936Zh4yZmI1" 
                class="link" 
                target="_blank" 
                rel="noopener noreferrer">
@@ -121,7 +106,7 @@
                 Join my Telegram channel – Daily FREE signals & education
             </a>
 
-            <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
+            <a href="https://t.me/+noyfo936Zh4yZmI1" 
                class="link" 
                target="_blank" 
                rel="noopener noreferrer">
@@ -133,17 +118,6 @@
                 My Telegram Channel
             </a>
         </div>
-
-        <!-- Optional extra call-to-action button -->
-        <a href="https://telegram.me/+noyfo936Zh4yZmI1" 
-           class="join-btn" 
-           target="_blank" 
-           rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>
-            </svg>
-            Join Now – Get Signals Daily
-        </a>
     </div>
 </body>
 </html>
