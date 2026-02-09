@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Billion Forex Trade™</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-        .subscribers {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-        .alert {
-            font-size: 1.4rem;
-            margin: 20px 0;
-            color: #ffcc00;
-        }
-        .telegram-btn {
-            display: inline-block;
-            background-color: #0088cc;
-            color: white;
-            padding: 12px 30px;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-        .telegram-btn:hover {
-            background-color: #006f99;
-        }
-        .features {
-            margin-top: 40px;
-            text-align: left;
-            font-size: 1.1rem;
-        }
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        .features li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: flex-start;
-        }
-        .features li::before {
-            content: attr(data-icon);
-            margin-right: 10px;
-            font-size: 1.3rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>My Billion Forex Trade™</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6, #d946ef);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-gradient {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    }
+    .btn-gradient:active {
+      transform: scale(0.97);
+    }
+    .feature-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Hello – Learner</h1>
-        <h3>My Billion Forex Trade™</h3>
-        <div class="subscribers">1M+ Subscribers</div>
-        <div class="alert">🚨 Get My Personal Trades on Telegram! 💸</div>
-        <a href="https://t.me/+your-actual-channel-link-here" class="telegram-btn">JOIN TELEGRAM</a>
-        <div class="features">
-            <h3>Features :</h3>
-            <ul>
-                <li data-icon="📊">Daily Market Updates – Learn from real-time Crypto & Forex market movements shared clearly.</li>
-                <li data-icon="🔍">Structured Market Insights – Understand how experienced traders study charts and market structure.</li>
-                <li data-icon="📘">Education-First Approach – Every update focuses on learning the logic, not blindly following tips.</li>
-                <li data-icon="⚡">Timely Explanations – Stay updated with quick, easy-to-follow breakdowns when markets move.</li>
-            </ul>
-        </div>
+<body class="min-h-screen flex flex-col items-center py-8 px-5 sm:px-6">
+
+  <div class="w-full max-w-md flex flex-col items-center space-y-6 text-center">
+
+    <!-- Logo & Brand -->
+    <div class="space-y-1">
+      <div class="text-7xl sm:text-8xl">🌳</div> <!-- Replace with real logo: <img src="your-tree-logo-url.png" alt="mybillion" class="h-28 sm:h-32 mx-auto" /> -->
+      <p class="text-xl sm:text-2xl font-medium text-gray-700 tracking-wide">mybillion</p>
     </div>
+
+    <!-- Main Title -->
+    <h1 class="text-4xl sm:text-5xl font-bold gradient-text leading-tight">
+      My Billion Forex Trade™
+    </h1>
+
+    <!-- Subscribers -->
+    <p class="text-2xl sm:text-3xl font-bold text-gray-800">
+      1M+ Subscribers
+    </p>
+
+    <!-- Hook line -->
+    <p class="text-xl sm:text-2xl font-medium flex items-center justify-center gap-3 flex-wrap">
+      <span class="text-3xl">🚨</span>
+      Get My Personal Trades on Telegram!
+      <span class="text-3xl">💸</span>
+    </p>
+
+    <!-- Join Button -->
+    <a 
+      href="https://t.me/+your-real-channel-link-here" 
+      target="_blank"
+      class="w-full max-w-sm py-5 px-8 text-xl sm:text-2xl font-bold text-white rounded-2xl shadow-lg btn-gradient flex items-center justify-center gap-3 active:scale-95 transition-transform duration-150 touch-manipulation"
+    >
+      <span class="text-2xl">✈️</span> JOIN TELEGRAM
+    </a>
+
+    <!-- Features Section -->
+    <div class="w-full bg-white rounded-2xl shadow-md border border-gray-200/70 p-6 sm:p-8 space-y-6 mt-4">
+      <h2 class="text-3xl sm:text-4xl font-bold gradient-text">
+        Features :
+      </h2>
+
+      <div class="space-y-5 text-left text-base sm:text-lg text-gray-800 leading-relaxed">
+        <div class="flex items-start gap-4">
+          <span class="feature-icon">◎</span>
+          <p><strong class="text-blue-600">📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="feature-icon">◎</span>
+          <p><strong class="text-purple-600">🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="feature-icon">◎</span>
+          <p><strong class="text-indigo-600">📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="feature-icon">◎</span>
+          <p><strong class="text-yellow-500">⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer disclaimer -->
+  <p class="mt-10 text-sm text-gray-500 text-center px-4">
+    Trading involves high risk. This is not financial advice. Past performance is not indicative of future results.
+  </p>
+
 </body>
 </html>
