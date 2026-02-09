@@ -3,127 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forex Gold Master – Telegram</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Gold Trader Sam</title>
+ 
+  <!-- Meta Pixel Code (unchanged) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '897580452655562');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=897580452655562&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+ 
+  <!-- Preload Telegram -->
+  <link rel="preconnect" href="https://telegram.me" crossorigin />
+  <link rel="dns-prefetch" href="https://telegram.me" />
+ 
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-      line-height: 1.5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #ffffff;                    /* ← Changed to white */
+      color: #111111;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 18px;
     }
-    .profile-pic {
-      width: 80px;
-      height: 80px;
-      border-radius: 9999px;
-      object-fit: cover;
+    .container { max-width: 450px; width: 100%; }
+    .logo-circle {
+      width: 162px; height: 162px; margin: 0 auto 27px;
+      background: #f0f0f0;                    /* light bg for logo on white page */
+      border-radius: 50%;
+      border: 3px solid #0066cc;              /* Telegram blue border */
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
     }
-    .btn-gradient {
-      background: linear-gradient(to right, #3b82f6, #60a5fa);
+    .logo-circle img {
+      width: 90%;
+      height: auto;
+      object-fit: contain;
     }
-    .btn-gradient:active {
-      transform: scale(0.98);
+    h1 { 
+      font-size: 2.5rem; 
+      margin-bottom: 11px; 
+      color: #0066cc;                         /* Telegram blue for heading */
+    }
+    .subtitle { 
+      font-size: 1.25rem; 
+      color: #444444; 
+      margin-bottom: 7px; 
+    }
+    .description { 
+      font-size: 1.05rem; 
+      line-height: 1.5; 
+      margin: 18px 0 27px; 
+      color: #333333; 
+    }
+    .markets { 
+      font-size: 1.17rem; 
+      font-weight: bold; 
+      color: #0066cc;                         /* matching theme */
+      margin-bottom: 36px; 
+    }
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, #0088cc, #00aaff);  /* Telegram colors */
+      color: #fff;
+      font-size: 1.17rem;
+      font-weight: bold;
+      padding: 16px 36px;
+      border-radius: 45px;
+      text-decoration: none;
+      box-shadow: 0 7px 18px rgba(0, 136, 204, 0.35);
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 11px 27px rgba(0, 136, 204, 0.5);
+    }
+    .telegram-icon { 
+      margin-right: 9px; 
+      font-size: 1.35rem; 
+    }
+    .cta-button.loading::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.15);
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 0; }
+      50% { opacity: 0.4; }
     }
   </style>
 </head>
-<body class="min-h-screen flex items-center justify-center py-10 px-5">
-
-  <div class="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden">
-
-    <!-- Header / Profile Section -->
-    <div class="bg-gradient-to-b from-blue-50 to-white p-8 text-center border-b border-gray-100">
-      <div class="flex justify-center mb-4">
-        <div class="relative">
-          <!-- Replace src with your actual profile picture URL -->
-          <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80" 
-            alt="Forex Gold Master" 
-            class="profile-pic border-4 border-white shadow-lg"
-          />
-        </div>
-      </div>
-
-      <h1 class="text-2xl sm:text-3xl font-bold text-blue-700 tracking-tight">
-        FOREX GOLD MASTER
-      </h1>
-
-      <p class="text-lg font-semibold text-gray-700 mt-1">
-        1M+ Subscribers
-      </p>
+<body>
+  <div class="container">
+    <div class="logo-circle">
+      <img src="GOLD TRADER SAM LOGO.png" alt="Gold Trader Sam Logo">
     </div>
-
-    <!-- Main Content -->
-    <div class="p-8 space-y-8">
-
-
-       <!-- Join Button -->
-      <a
-        href="https://telegram.me/+Y5lKAwHKQtxkZmI1"  <!-- ← Replace with your real Telegram invite link -->
-        class="block w-full py-6 px-8 text-xl font-bold text-white text-center rounded-full btn-gradient shadow-lg active:scale-95 transition-all duration-150 flex items-center justify-center gap-3"
-      >
-        <span class="text-2xl">✈️</span>
-        JOIN TELEGRAM
-      </a>
-
-      <!-- Hook -->
-      <div class="text-center space-y-3">
-        <p class="text-xl font-medium flex items-center justify-center gap-3 flex-wrap">
-          <span class="text-3xl">🚨</span>
-          Get My Personal Trades on
-          <br class="sm:hidden" />
-          Telegram!
-          <span class="text-3xl">💸</span>
-        </p>
-      </div>
-
-      <!-- Features -->
-      <div class="space-y-6">
-        <h2 class="text-2xl font-bold text-blue-700 text-center">
-          Features :
-        </h2>
-
-        <div class="space-y-5 text-gray-800">
-          <div class="flex items-start gap-4">
-            <span class="text-3xl mt-1">◎</span>
-            <p>
-              <strong class="text-blue-600">📊 Live Daily Trades</strong> – Straight from my portfolio to yours!
-            </p>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <span class="text-3xl mt-1">◎</span>
-            <p>
-              <strong class="text-red-500">🔥 Exclusive Signals</strong> – Access the same trades I make!
-            </p>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <span class="text-3xl mt-1">◎</span>
-            <p>
-              <strong class="text-green-600">100% High Accuracy</strong> – Proven strategy for consistent profits!
-            </p>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <span class="text-3xl mt-1">◎</span>
-            <p>
-              <strong class="text-yellow-500">💡 Real-Time Updates</strong> – Stay ahead with instant notifications!
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <h1>Gold Trader Sam</h1>
+    <h2 class="subtitle">Daily FREE Signals & Trading Education</h2>
+    <div class="description">
+      Join thousands of traders getting daily free signals and high-quality education — no cost, no catch.
     </div>
-
-    <!-- Tiny footer -->
-    <div class="text-center py-5 text-sm text-gray-500 border-t border-gray-100">
-      Trading involves high risk • Not financial advice
-    </div>
-
+    <div class="markets">Gold | Crypto | Forex</div>
+    <a
+      href="https://telegram.me/+sw7DyAMe1ZM4ZGM1"
+      class="cta-button"
+      id="joinBtn"
+    >
+      <span class="telegram-icon">✈️</span> Join Free Telegram Channel
+    </a>
   </div>
 
+  <!-- Subscribe Conversion Tracking (unchanged) -->
+  <script>
+    document.getElementById('joinBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      this.classList.add('loading');
+      if (typeof fbq === 'function') {
+        fbq('track', 'Subscribe');
+      }
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 300);
+    });
+  </script>
 </body>
 </html>
