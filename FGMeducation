@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello – Learner | My Billion Forex Trade™</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2 { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
+
+  <!-- Hero Section -->
+  <section class="py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Hello – Learner
+      </h1>
+      
+      <h2 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
+        My Billion Forex Trade™
+      </h2>
+      
+      <p class="text-3xl md:text-4xl font-semibold mb-10">
+        1M+ Subscribers
+      </p>
+      
+      <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+        🚨 Get My Personal Trades on Telegram! 💸
+      </p>
+      
+      <a 
+        href="https://t.me/+your-telegram-channel-link-here" 
+        target="_blank"
+        class="inline-block bg-green-600 hover:bg-green-700 text-white text-xl md:text-2xl font-bold py-6 px-16 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+      >
+        JOIN TELEGRAM NOW →
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 px-6 bg-black/40 border-t border-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        Features
+      </h2>
+      
+      <div class="space-y-12 text-lg md:text-xl">
+        <div class="flex items-start gap-6">
+          <span class="text-4xl">⦿</span>
+          <p><strong>📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
+        </div>
+        
+        <div class="flex items-start gap-6">
+          <span class="text-4xl">⦿</span>
+          <p><strong>🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
+        </div>
+        
+        <div class="flex items-start gap-6">
+          <span class="text-4xl">⦿</span>
+          <p><strong>📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
+        </div>
+        
+        <div class="flex items-start gap-6">
+          <span class="text-4xl">⦿</span>
+          <p><strong>⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 px-6 text-center bg-gradient-to-r from-green-900/30 to-blue-900/30">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-10">
+        Ready to Level Up Your Trading?
+      </h2>
+      <p class="text-xl md:text-2xl mb-12">
+        Join 1M+ learners getting real trades & education daily — completely free on Telegram.
+      </p>
+      
+      <a 
+        href="https://t.me/+your-telegram-channel-link-here" 
+        target="_blank"
+        class="inline-block bg-green-600 hover:bg-green-700 text-white text-2xl font-bold py-8 px-20 rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300"
+      >
+        JOIN TELEGRAM → FREE
+      </a>
+    </div>
+  </section>
+
+  <!-- Simple Footer -->
+  <footer class="py-12 text-center text-gray-500 border-t border-gray-800">
+    <p>© 2026 My Billion Forex Trade™ • Trading involves risk. Not financial advice.</p>
+  </footer>
+
+</body>
+</html>
