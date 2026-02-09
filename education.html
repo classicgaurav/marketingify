@@ -9,10 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; background-color: #f9fafb; color: #111827; }
-    h1, h2 { font-family: 'Poppins', sans-serif; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
     .gradient-text {
-      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      background: linear-gradient(to right, #3b82f6, #8b5cf6, #d946ef);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -23,77 +30,84 @@
     .btn-gradient:hover {
       background: linear-gradient(to right, #2563eb, #7c3aed);
     }
+    /* Mobile-first spacing adjustments */
+    @media (min-width: 640px) {
+      .container {
+        max-width: 480px; /* Keeps it phone-like even on tablets */
+      }
+    }
   </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center py-12 px-4">
+<body class="min-h-screen flex flex-col items-center py-10 px-5 sm:px-8">
 
-  <div class="w-full max-w-lg text-center space-y-8">
+  <div class="w-full max-w-[480px] mx-auto flex flex-col items-center space-y-10">
 
-    <!-- Logo -->
-    <div class="flex flex-col items-center">
-      <div class="text-6xl md:text-7xl mb-1">🌳</div> <!-- Replace with real logo SVG/img if available -->
-      <p class="text-lg font-medium text-gray-700">mybillion</p>
+    <!-- Logo + Brand -->
+    <div class="flex flex-col items-center space-y-1">
+      <div class="text-7xl sm:text-8xl">🌳</div> <!-- ← Replace with <img src="..." class="h-28 sm:h-32" /> -->
+      <p class="text-xl sm:text-2xl font-medium text-gray-700 tracking-wide">mybillion</p>
     </div>
 
     <!-- Main Title -->
-    <h1 class="text-4xl md:text-5xl font-bold gradient-text">
+    <h1 class="text-4xl sm:text-5xl font-bold gradient-text text-center leading-tight">
       My Billion Forex Trade™
     </h1>
 
-    <!-- Subscribers -->
-    <p class="text-2xl md:text-3xl font-semibold text-gray-800">
+    <!-- Subscribers count -->
+    <p class="text-3xl sm:text-4xl font-bold text-gray-800">
       1M+ Subscribers
     </p>
 
-    <!-- CTA Text -->
-    <p class="text-xl md:text-2xl font-medium flex items-center justify-center gap-2 flex-wrap">
-      <span class="text-red-500">🚨</span>
+    <!-- Hook text -->
+    <p class="text-xl sm:text-2xl font-medium text-center flex items-center justify-center gap-3 flex-wrap px-2">
+      <span class="text-3xl">🚨</span>
       Get My Personal Trades on Telegram!
-      <span class="text-green-500">💸</span>
+      <span class="text-3xl">💸</span>
     </p>
 
-    <!-- Join Button -->
+    <!-- Big Join Button – full-width on mobile, very tappable -->
     <a 
-      href="https://t.me/MyBillionTrade"  <!-- ← Replace with your actual Telegram link -->
+      href="https://t.me/MyBillionTrade"  <!-- ← YOUR REAL TELEGRAM LINK HERE -->
       target="_blank"
-      class="inline-block w-full max-w-md mx-auto py-5 px-10 text-xl md:text-2xl font-bold text-white rounded-2xl shadow-lg btn-gradient transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+      class="w-full max-w-sm mx-auto py-6 px-8 text-2xl sm:text-3xl font-bold text-white rounded-3xl shadow-xl btn-gradient flex items-center justify-center gap-4 transform active:scale-95 transition-all duration-200 touch-manipulation"
     >
-      <span>✈️</span> JOIN TELEGRAM
+      <span class="text-3xl">✈️</span> JOIN TELEGRAM
     </a>
 
-    <!-- Features Card -->
-    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 md:p-10 mt-10 text-left">
-      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-8">
+    <!-- Features section – card style, very readable on phone -->
+    <div class="w-full bg-white rounded-3xl shadow-lg border border-gray-200/80 p-7 sm:p-9 space-y-8">
+      <h2 class="text-3xl sm:text-4xl font-bold gradient-text text-center">
         Features :
       </h2>
 
-      <div class="space-y-6 text-base md:text-lg text-gray-800">
+      <div class="space-y-7 text-base sm:text-lg leading-relaxed text-gray-800">
         <div class="flex items-start gap-4">
-          <span class="text-2xl mt-1">◎</span>
-          <p><strong class="text-indigo-600">📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
+          <span class="text-3xl flex-shrink-0 mt-1">◎</span>
+          <p><strong class="text-indigo-700">📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-2xl mt-1">◎</span>
-          <p><strong class="text-indigo-600">🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
+          <span class="text-3xl flex-shrink-0 mt-1">◎</span>
+          <p><strong class="text-indigo-700">🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-2xl mt-1">◎</span>
-          <p><strong class="text-indigo-600">📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
+          <span class="text-3xl flex-shrink-0 mt-1">◎</span>
+          <p><strong class="text-indigo-700">📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-2xl mt-1">◎</span>
-          <p><strong class="text-indigo-600">⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
+          <span class="text-3xl flex-shrink-0 mt-1">◎</span>
+          <p><strong class="text-indigo-700">⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
         </div>
       </div>
     </div>
 
   </div>
 
-  <footer class="mt-16 text-sm text-gray-500">
-    Trading involves risk. Not financial advice.
+  <!-- Tiny footer -->
+  <footer class="mt-16 text-sm text-gray-500 text-center px-4">
+    Trading involves high risk. This is not financial advice. Past performance ≠ future results.
   </footer>
 
 </body>
