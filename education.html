@@ -1,103 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hello – Learner | My Billion Forex Trade™</title>
+  <title>My Billion Forex Trade™</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; background-color: #f9fafb; color: #111827; }
     h1, h2 { font-family: 'Poppins', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-gradient {
+      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(to right, #2563eb, #7c3aed);
+    }
   </style>
 </head>
-<body class="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
+<body class="min-h-screen flex flex-col items-center justify-center py-12 px-4">
 
-  <!-- Hero Section -->
-  <section class="py-20 px-6 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-        Hello – Learner
-      </h1>
-      
-      <h2 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
-        My Billion Forex Trade™
-      </h2>
-      
-      <p class="text-3xl md:text-4xl font-semibold mb-10">
-        1M+ Subscribers
-      </p>
-      
-      <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
-        🚨 Get My Personal Trades on Telegram! 💸
-      </p>
-      
-      <a 
-        href="https://t.me/+your-telegram-channel-link-here" 
-        target="_blank"
-        class="inline-block bg-green-600 hover:bg-green-700 text-white text-xl md:text-2xl font-bold py-6 px-16 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
-      >
-        JOIN TELEGRAM NOW →
-      </a>
+  <div class="w-full max-w-lg text-center space-y-8">
+
+    <!-- Logo -->
+    <div class="flex flex-col items-center">
+      <div class="text-6xl md:text-7xl mb-1">🌳</div> <!-- Replace with real logo SVG/img if available -->
+      <p class="text-lg font-medium text-gray-700">mybillion</p>
     </div>
-  </section>
 
-  <!-- Features Section -->
-  <section class="py-20 px-6 bg-black/40 border-t border-gray-800">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-        Features
+    <!-- Main Title -->
+    <h1 class="text-4xl md:text-5xl font-bold gradient-text">
+      My Billion Forex Trade™
+    </h1>
+
+    <!-- Subscribers -->
+    <p class="text-2xl md:text-3xl font-semibold text-gray-800">
+      1M+ Subscribers
+    </p>
+
+    <!-- CTA Text -->
+    <p class="text-xl md:text-2xl font-medium flex items-center justify-center gap-2 flex-wrap">
+      <span class="text-red-500">🚨</span>
+      Get My Personal Trades on Telegram!
+      <span class="text-green-500">💸</span>
+    </p>
+
+    <!-- Join Button -->
+    <a 
+      href="https://t.me/MyBillionTrade"  <!-- ← Replace with your actual Telegram link -->
+      target="_blank"
+      class="inline-block w-full max-w-md mx-auto py-5 px-10 text-xl md:text-2xl font-bold text-white rounded-2xl shadow-lg btn-gradient transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+    >
+      <span>✈️</span> JOIN TELEGRAM
+    </a>
+
+    <!-- Features Card -->
+    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 md:p-10 mt-10 text-left">
+      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-8">
+        Features :
       </h2>
-      
-      <div class="space-y-12 text-lg md:text-xl">
-        <div class="flex items-start gap-6">
-          <span class="text-4xl">⦿</span>
-          <p><strong>📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
+
+      <div class="space-y-6 text-base md:text-lg text-gray-800">
+        <div class="flex items-start gap-4">
+          <span class="text-2xl mt-1">◎</span>
+          <p><strong class="text-indigo-600">📊 Daily Market Updates</strong> – Learn from real-time Crypto & Forex market movements shared clearly.</p>
         </div>
-        
-        <div class="flex items-start gap-6">
-          <span class="text-4xl">⦿</span>
-          <p><strong>🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl mt-1">◎</span>
+          <p><strong class="text-indigo-600">🔍 Structured Market Insights</strong> – Understand how experienced traders study charts and market structure.</p>
         </div>
-        
-        <div class="flex items-start gap-6">
-          <span class="text-4xl">⦿</span>
-          <p><strong>📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl mt-1">◎</span>
+          <p><strong class="text-indigo-600">📘 Education-First Approach</strong> – Every update focuses on learning the logic, not blindly following tips.</p>
         </div>
-        
-        <div class="flex items-start gap-6">
-          <span class="text-4xl">⦿</span>
-          <p><strong>⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl mt-1">◎</span>
+          <p><strong class="text-indigo-600">⚡ Timely Explanations</strong> – Stay updated with quick, easy-to-follow breakdowns when markets move.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Final CTA -->
-  <section class="py-24 px-6 text-center bg-gradient-to-r from-green-900/30 to-blue-900/30">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold mb-10">
-        Ready to Level Up Your Trading?
-      </h2>
-      <p class="text-xl md:text-2xl mb-12">
-        Join 1M+ learners getting real trades & education daily — completely free on Telegram.
-      </p>
-      
-      <a 
-        href="https://t.me/+your-telegram-channel-link-here" 
-        target="_blank"
-        class="inline-block bg-green-600 hover:bg-green-700 text-white text-2xl font-bold py-8 px-20 rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300"
-      >
-        JOIN TELEGRAM → FREE
-      </a>
-    </div>
-  </section>
+  </div>
 
-  <!-- Simple Footer -->
-  <footer class="py-12 text-center text-gray-500 border-t border-gray-800">
-    <p>© 2026 My Billion Forex Trade™ • Trading involves risk. Not financial advice.</p>
+  <footer class="mt-16 text-sm text-gray-500">
+    Trading involves risk. Not financial advice.
   </footer>
 
 </body>
